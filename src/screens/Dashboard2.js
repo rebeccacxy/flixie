@@ -35,6 +35,12 @@ const cards = [
     subtitle: '2 Members',
     icon: 'credit-card',
     iconFamily: 'Galio',
+  },
+  {
+    title: 'New Group',
+    subtitle: '2 Members',
+    icon: 'credit-card',
+    iconFamily: 'Galio',
   }
 ];
 const statsTitles = ['Jul', 'Aug', 'Sep', 'Oct', 'Nov'];
@@ -51,7 +57,7 @@ const Dashboard = (props) => {
         <Button
           color="transparent"
           style={styles.settings}
-          onPress={() => props.navigation.navigate('Login')}
+          onPress={() => props.navigation.navigate('CreateGroup1')}
         >
           <Icon
             size={30}
@@ -156,7 +162,7 @@ const Dashboard = (props) => {
           />
         </Gradient> */}
 
-        <Block flex>
+        <Block flex style={styles.left}>
           <Text size={BASE_SIZE * 1.125}>{props.title}</Text>
           <Text size={BASE_SIZE * 0.875} muted>
             {props.subtitle}
@@ -164,10 +170,11 @@ const Dashboard = (props) => {
         </Block>
         <Button style={styles.right}>
           <Icon
-            size={BASE_SIZE}
-            name="minimal-right"
-            family="Galio"
-            color={COLOR_GREY}
+            style={styles.right}
+            size={25}
+            name="more-vert"
+            family="material"
+            color="#e279fc"
           />
         </Button>
       </Block>
@@ -211,8 +218,10 @@ const styles = StyleSheet.create({
   },
   left: {
     marginRight: BASE_SIZE,
+    marginLeft: 10,
   },
   right: {
+    marginLeft: 25,
     width: BASE_SIZE * 2,
     backgroundColor: 'transparent',
     elevation: 0,
