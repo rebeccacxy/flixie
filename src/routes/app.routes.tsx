@@ -13,6 +13,7 @@ import HomeButtom from '../components/HomeButton';
 import Discover from '../pages/Discover';
 // import Home from '../screens/Home.js';
 import Home from '../pages/Home';
+// import Home from '../pages/Home/Feed';
 import Inbox from '../pages/Inbox';
 import Me from '../pages/Me';
 // import Record from '../pages/Record';
@@ -20,7 +21,7 @@ import Me from '../pages/Me';
 const Tab = createMaterialBottomTabNavigator();
 const Stack = createStackNavigator();
 
-const AppRoutes: React.FC = () => {
+const AppRoutes: React.FC = ({ navigation }) => {
   const [home, setHome] = useState(true);
 
   StatusBar.setBarStyle('dark-content');
@@ -48,7 +49,8 @@ const AppRoutes: React.FC = () => {
     >
       <Tab.Screen
         name="Discover"
-        component={Home}
+        // component={Home}
+        children={() => <Home navigation={navigation} />}
         listeners={{
           focus: () => setHome(true),
           blur: () => setHome(false),
@@ -88,20 +90,20 @@ const AppRoutes: React.FC = () => {
         }}
       /> */}
       <Tab.Screen
-        name="Chats"
+        name="Matches"
         component={Inbox}
         options={{
-          tabBarLabel: 'Chats',
+          tabBarLabel: 'Matches',
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons
-              name="message-text-outline"
+              name="heart"
               size={24}
               color={color}
             />
           ),
         }}
       />
-      <Tab.Screen
+      {/* <Tab.Screen
         name="Me"
         component={Me}
         options={{
@@ -110,7 +112,7 @@ const AppRoutes: React.FC = () => {
             <AntDesign name="user" size={24} color={color} />
           ),
         }}
-      />
+      /> */}
     </Tab.Navigator>
   );
 };

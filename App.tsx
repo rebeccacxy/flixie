@@ -17,7 +17,6 @@ import Dashboard2 from './src/screens/Dashboard2';
 import AddMembers from './src/screens/AddMembers';
 import Info from './src/screens/Info';
 
-
 const Stack = createStackNavigator();
 
 const App = () => {
@@ -31,13 +30,13 @@ const App = () => {
           <Stack.Screen name="Login" component={Login} />
           <Stack.Screen name="Register" component={Register} />
           <Stack.Screen name="Dashboard1" component={Dashboard1} />
-          <Stack.Screen name="Preferences" component={Preferences} />
           <Stack.Screen name="CreateGroup1" component={CreateGroup1} />
           <Stack.Screen name="AddMembers" component={AddMembers} />
           <Stack.Screen name="CreateGroup2" component={CreateGroup2} />
           <Stack.Screen name="Dashboard2" component={Dashboard2} />
+          <Stack.Screen name="Preferences" component={Preferences} />
+          <Stack.Screen name="Root" component={Routes} />
           <Stack.Screen name="Info" component={Info} />
-          {/* <Stack.Screen name="Root" component={Routes} /> */}
         </Stack.Navigator>
       </NavigationContainer>
     </>

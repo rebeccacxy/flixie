@@ -46,7 +46,7 @@ interface Props {
   item: Item;
 }
 
-const Feed: React.FC<Props> = ({ play, item }) => {
+const Feed= ({ play, item, navigation }) => {
   // const spinValue = new Animated.Value(0);
 
   // Animated.loop(
@@ -67,6 +67,13 @@ const Feed: React.FC<Props> = ({ play, item }) => {
   //       this.setState(iconColor: "blue")
   //   };
 
+  const vids = [
+    require("../../../assets/forbiggerblazes.mp4"),
+    require("../../../assets/big-buck-bunny1.mp4"),
+    require("../../../assets/queensgambit1.mp4"),
+    require("../../../assets/naruto1.mp4"),
+  ]
+
   return (
     <>
       <LinearGradient
@@ -81,7 +88,7 @@ const Feed: React.FC<Props> = ({ play, item }) => {
       />
       <Container>
         <Video
-          source={{ uri: item.uri }}
+          source={vids[item.id]}
           rate={1.0}
           volume={1.0}
           isMuted={false}
@@ -99,7 +106,7 @@ const Feed: React.FC<Props> = ({ play, item }) => {
         <Tags>{item.tags}</Tags>
         <MusicBox>
           <TouchableOpacity
-          // onPress={navigation.navigate('Expandedscreen')}
+            onPress={() => navigation.navigate('Info')}
           >
             <Music>{item.music}</Music>
           </TouchableOpacity>

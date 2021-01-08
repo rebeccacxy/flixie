@@ -8,11 +8,11 @@ const Inbox: React.FC = () => {
   return (
     <Container>
       <Header>
-        <Title>All activity</Title>
-        <MaterialIcons name="arrow-drop-down" size={24} color="black" />
+        <Title style={{ fontSize: 30, marginTop: 10, marginBottom: 15 }}>Matches</Title>
+        {/* <MaterialIcons name="arrow-drop-down" size={24} color="black" /> */}
         <Feather
-          style={{ position: 'absolute', right: 10, top: 10 }}
-          name="send"
+          style={{ position: 'absolute', right: 30, top: 25 }}
+          name="settings"
           size={24}
           color="black"
         />

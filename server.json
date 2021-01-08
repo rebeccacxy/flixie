@@ -5,19 +5,28 @@
       "username": "Game of Thrones",
       "tags": "#dragon #fantasy #blockbuster #romance",
       "music": "Learn more...",
-      // "likes": 8411,
-      // "comments": 2240,
-      "uri": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
-      
+      "uri": "queensgambit1.mp4"
     },
     {
       "id": 1,
       "username": "Big Buck Bunny",
       "tags": "#comedy #bunny #cartoon #animals #animated",
       "music": "Learn more...",
-      // "likes": 9444,
-      // "comments": 6340,
-      "uri": "https://www.radiantmediaplayer.com/media/big-buck-bunny-360p.mp4"
+      "uri": "queensgambit1.mp4"
+    },
+    {
+      "id": 2,
+      "username": "The Queen's Gambit",
+      "tags": "#drama #thriller #chess",
+      "music": "Learn more...",
+      "uri": "queensgambit1.mp4"
+    },
+    {
+      "id": 3,
+      "username": "Naruto",
+      "tags": "#fantasy #anime #ninja #animated",
+      "music": "Learn more...",
+      "uri": "naruto1.mp4"
     }
   ]
 }

@@ -44,20 +44,31 @@ class Search extends React.Component {
       transparent={true}
       onLeftPress={() => props.navigation.openDrawer()}
       leftIconColor={theme.COLORS.MUTED}
-      // right={
-      //   <Button
-      //     color="transparent"
-      //     style={styles.settings}
-      //     onPress={() => props.navigation.navigate('Preferences')}
-      //   />
-      //     <Icon
-      //       size={30}
-      //       name="plus"
-      //       family="font-awesome"
-      //       color={theme.COLORS.MUTED}
-      //     />
-      //   </Button>
-      // }
+      right={
+        <Button
+          color="transparent"
+          style={{
+            // width: 20,
+            borderColor: 'transparent',
+            marginRight: 40,
+            marginTop: 45,
+            // marginLeft: 30
+          }}
+          onPress={() => {
+            this.props.navigation.reset({
+              index: 0,
+              routes: [{ name: 'Root' }],
+            })
+          }}
+        >
+          <Icon
+            size={30}
+            name="arrowright"
+            family="AntDesign"
+            color={theme.COLORS.MUTED}
+          />
+        </Button>
+      }
       style={{ marginTop: '5%', height: 125 }}
     />
   );

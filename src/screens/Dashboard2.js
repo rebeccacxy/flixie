@@ -57,7 +57,7 @@ const Dashboard = (props) => {
         <Button
           color="transparent"
           style={styles.settings}
-          onPress={() => props.navigation.navigate('Info')}
+          onPress={() => props.navigation.navigate('Preferences')}
         >
           <Icon
             size={30}
