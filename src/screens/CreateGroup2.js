@@ -32,14 +32,14 @@ const members = [
         icon: 'credit-card',
         iconFamily: 'Galio',
     },
-    // {
-    //     title: 'Schmidt',
-    //     icon: 'credit-card',
-    //     iconFamily: 'Galio',
-    // },
+    {
+        title: 'Schmidt',
+        icon: 'credit-card',
+        iconFamily: 'Galio',
+    },
 ];
 
-const CreateGroup1 = (props) => {
+const CreateGroup2 = (props) => {
     const renderHeader = () => (
         <NavBar
             title="Create Group"
@@ -96,10 +96,10 @@ const CreateGroup1 = (props) => {
             {/* stats */}
             {/* {renderStats()} */}
             <Block middle style={{ padding: BASE_SIZE }}>
-                <Input placeholder="Group Name" />
+                <Input placeholder="Group Name" value='Memes' />
                 <Button
                     round
-                    onPress={() => props.navigation.navigate('AddMembers')}
+                    onPress={() => props.navigation.navigate('Preferences')}
                     style={{ alignSelf: 'stretch', marginLeft: 'auto', marginRight: 'auto', width: '100%' }}
                 >
                     Invite Friends
@@ -109,7 +109,11 @@ const CreateGroup1 = (props) => {
             {/* cards */}
             <ScrollView style={{ flex: 1 }}>{renderCards()}</ScrollView>
             <Block middle space='evenly' style={{ padding: BASE_SIZE }}>
-                <Button color="#e279fc" style={{ alignSelf: 'stretch', marginLeft: 'auto', marginRight: 'auto', width: '100%' }}>Create</Button>
+                <Button
+                    color="#e279fc"
+                    style={{ alignSelf: 'stretch', marginLeft: 'auto', marginRight: 'auto', width: '100%' }}
+                    onPress={() => props.navigation.navigate('Dashboard2')}
+                >Create</Button>
             </Block>
         </Block>
     );
@@ -149,4 +153,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default CreateGroup1;
+export default CreateGroup2;

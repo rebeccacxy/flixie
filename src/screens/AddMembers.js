@@ -16,30 +16,17 @@ const COLOR_WHITE = theme.COLORS.WHITE;
 const COLOR_GREY = theme.COLORS.MUTED; // '#D8DDE1';
 
 // mock data
-const members = [
+const mock = [
     {
-        title: 'John',
-        icon: 'list-bullet',
-        iconFamily: 'Galio',
-    },
-    {
-        title: 'Jacob',
-        icon: 'bag-17',
-        iconFamily: 'Galio',
-    },
-    {
-        title: 'Jingleheimer',
+        title: 'Schmidt',
         icon: 'credit-card',
         iconFamily: 'Galio',
     },
-    // {
-    //     title: 'Schmidt',
-    //     icon: 'credit-card',
-    //     iconFamily: 'Galio',
-    // },
 ];
 
-const CreateGroup1 = (props) => {
+const AddMembers = (props) => {
+    const [members, setMembers] = React.useState([]);
+
     const renderHeader = () => (
         <NavBar
             title="Create Group"
@@ -60,23 +47,16 @@ const CreateGroup1 = (props) => {
                 style={styles.card}
                 key={props.title}
             >
-                {/* <Icon
-                    size={BASE_SIZE}
-                    name={props.icon}
-                    color={COLOR_WHITE}
-                    family={props.iconFamily}
-                /> */}
-
                 <Block flex>
                     <Text size={BASE_SIZE * 1.125}>{props.title}</Text>
                     <Text size={BASE_SIZE * 0.875} muted>
                         {props.subtitle}
                     </Text>
                 </Block>
-                <Button style={styles.right}>
+                <Button style={styles.right} onPress={() => props.navigation.navigate('CreateGroup2')}>
                     <Icon
                         size={25}
-                        name="circle-with-cross"
+                        name="check"
                         family="Entypo"
                         color="#e279fc"
                     />
@@ -95,12 +75,19 @@ const CreateGroup1 = (props) => {
 
             {/* stats */}
             {/* {renderStats()} */}
-            <Block middle style={{ padding: BASE_SIZE }}>
-                <Input placeholder="Group Name" />
+            <Block middle style={{ padding: BASE_SIZE }} flex>
+                <Input
+                    placeholder="Add friends"
+                // right
+                // icon="search1"
+                // family="antdesign"
+                // iconSize={14}
+                // iconColor="black"
+                />
                 <Button
                     round
-                    onPress={() => props.navigation.navigate('AddMembers')}
-                    style={{ alignSelf: 'stretch', marginLeft: 'auto', marginRight: 'auto', width: '100%' }}
+                    onPress={() => setMembers(mock[0])}
+                    style={{ alignSelf: 'stretch', marginLeft: 'auto', marginRight: 'auto', width: '10%' }}
                 >
                     Invite Friends
                 </Button>
@@ -108,9 +95,9 @@ const CreateGroup1 = (props) => {
 
             {/* cards */}
             <ScrollView style={{ flex: 1 }}>{renderCards()}</ScrollView>
-            <Block middle space='evenly' style={{ padding: BASE_SIZE }}>
+            {/* <Block middle space='evenly' style={{ padding: BASE_SIZE }}>
                 <Button color="#e279fc" style={{ alignSelf: 'stretch', marginLeft: 'auto', marginRight: 'auto', width: '100%' }}>Create</Button>
-            </Block>
+            </Block> */}
         </Block>
     );
 };
@@ -149,4 +136,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default CreateGroup1;
+export default AddMembers;
