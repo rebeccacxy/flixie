@@ -82,41 +82,30 @@ const Feed: React.FC<Props> = ({ play, item }) => {
       <Details>
         <User>{item.username}</User>
         <Tags>{item.tags}</Tags>
-        <MusicBox>
+        {/* <MusicBox>
           <FontAwesome name="music" size={15} color="#f5f5f5" />
           <Music>{item.music}</Music>
-        </MusicBox>
-      </Details>
-      <Actions>
+        </MusicBox> */}
+
         <BoxAction>
           <AntDesign
-            style={{ alignSelf: 'center' }}
+            style={{ alignSelf: 'center', paddingHorizontal: 110 }}
             name="heart"
-            size={35}
+            size={50}
+            color="#fff"
+          />
+          <FontAwesome
+            style={{ alignSelf: 'center' }}
+            name="times"
+            size={60}
             color="#fff"
           />
           <TextAction>{item.likes}</TextAction>
         </BoxAction>
+      </Details>
+      <Actions>
         <BoxAction>
-          <FontAwesome
-            style={{ alignSelf: 'center' }}
-            name="commenting"
-            size={35}
-            color="#fff"
-          />
-          <TextAction>{item.comments}</TextAction>
-        </BoxAction>
-        <BoxAction>
-          <FontAwesome
-            style={{ alignSelf: 'center' }}
-            name="whatsapp"
-            size={35}
-            color="#06d755"
-          />
-          <TextAction>Share</TextAction>
-        </BoxAction>
-        <BoxAction>
-          <Animated.View
+          {/* <Animated.View
             style={{
               borderRadius: 50,
               borderWidth: 12,
@@ -138,7 +127,7 @@ const Feed: React.FC<Props> = ({ play, item }) => {
                 uri: 'https://avatars3.githubusercontent.com/u/45601574',
               }}
             />
-          </Animated.View>
+          </Animated.View> */}
 
           <Lottie
             source={musicFly}

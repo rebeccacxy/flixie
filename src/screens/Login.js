@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
-import { TouchableOpacity, StyleSheet, Text, View, processColor } from 'react-native';
+import {
+  TouchableOpacity,
+  StyleSheet,
+  Text,
+  View,
+  processColor,
+} from 'react-native';
 // import { connect } from 'react-redux'
 import Background from '../components/Background';
 import Logo from '../components/Logo';
@@ -8,13 +14,12 @@ import Button from '../components/Button';
 import TextInput from '../components/TextInput';
 import BackButton from '../components/BackButton';
 // import { setAccountDetails } from '../features/account/accountSlice' // Action Creator
-import axios from 'axios'
+import axios from 'axios';
 // import {AWS_URL} from 'react-native-dotenv'
 // import { theme } from '../core/theme';
 // import { emailValidator, passwordValidator } from '../core/utils';
-import apiURL from '../constants/URLs'
+import apiURL from '../constants/URLs';
 // const mapDispatch = { setAccountDetails }
-
 
 const LoginScreen = ({ navigation, setAccountDetails }) => {
   const [email, setEmail] = useState({ value: '', error: '' });
@@ -42,12 +47,11 @@ const LoginScreen = ({ navigation, setAccountDetails }) => {
     navigation.reset({
       index: 0,
       routes: [{ name: 'Root' }],
-    })
+    });
   };
 
   return (
     <Background>
-
       <Logo />
 
       <Header>Welcome back.</Header>
@@ -102,14 +106,15 @@ const styles = StyleSheet.create({
     marginTop: 4,
   },
   label: {
-    color: 'blue'
+    color: 'blue',
   },
   link: {
     fontWeight: 'bold',
-    color: 'black'
+    color: 'black',
   },
 });
 
-const attemptLogin = (id, password) => axios.get(`${apiURL}/api/user/authenticate?id=${id}&pass=${password}`)
+const attemptLogin = (id, password) =>
+  axios.get(`${apiURL}/api/user/authenticate?id=${id}&pass=${password}`);
 
 export default LoginScreen;

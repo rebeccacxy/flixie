@@ -2,7 +2,7 @@ import styled from 'styled-components/native';
 
 export const Container = styled.View`
   background: #fff;
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -57,8 +57,8 @@ export const Actions = styled.View`
 export const BoxAction = styled.TouchableOpacity.attrs({
   activeOpacity: 0.8,
 })`
-  flex-direction: column;
-  padding: 10px 0;
+  flex-direction: row;
+  padding: 15px 0;
 `;
 
 export const TextAction = styled.Text`
