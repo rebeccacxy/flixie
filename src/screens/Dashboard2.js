@@ -135,7 +135,7 @@ const Dashboard = (props) => {
     );
   };
 
-  const renderCard = (props, index) => {
+  const renderCard = (card, index) => {
     const gradientColors = index % 2 ? GRADIENT_BLUE : GRADIENT_PINK;
 
     return (
@@ -146,7 +146,7 @@ const Dashboard = (props) => {
         shadow
         space="between"
         style={styles.card}
-        key={props.title}
+        key={card.title}
       >
         {/* <Gradient
           start={[0.45, 0.45]}
@@ -156,16 +156,16 @@ const Dashboard = (props) => {
         >
           <Icon
             size={BASE_SIZE}
-            name={props.icon}
+            name={card.icon}
             color={COLOR_WHITE}
-            family={props.iconFamily}
+            family={card.iconFamily}
           />
         </Gradient> */}
 
         <Block flex style={styles.left}>
-          <Text size={BASE_SIZE * 1.125}>{props.title}</Text>
+          <Text size={BASE_SIZE * 1.125}>{card.title}</Text>
           <Text size={BASE_SIZE * 0.875} muted>
-            {props.subtitle}
+            {card.subtitle}
           </Text>
         </Block>
         <Button style={styles.right} onPress={() => props.navigation.navigate('Info')}>

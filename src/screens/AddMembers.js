@@ -37,7 +37,7 @@ const AddMembers = (props) => {
         />
     );
 
-    const renderCard = (props, index) => {
+    const renderCard = (card, index) => {
         return (
             <Block
                 row
@@ -45,12 +45,12 @@ const AddMembers = (props) => {
                 card
                 space="between"
                 style={styles.card}
-                key={props.title}
+                key={card.title}
             >
                 <Block flex>
-                    <Text size={BASE_SIZE * 1.125}>{props.title}</Text>
+                    <Text size={BASE_SIZE * 1.125}>{card.title}</Text>
                     <Text size={BASE_SIZE * 0.875} muted>
-                        {props.subtitle}
+                        {card.subtitle}
                     </Text>
                 </Block>
                 <Button style={styles.right} onPress={() => props.navigation.navigate('CreateGroup2')}>
@@ -86,7 +86,7 @@ const AddMembers = (props) => {
                 />
                 <Button
                     round
-                    onPress={() => setMembers(mock[0])}
+                    onPress={() => setMembers(mock)}
                     style={{ alignSelf: 'stretch', marginLeft: 'auto', marginRight: 'auto', width: '10%' }}
                 >
                     Invite Friends
