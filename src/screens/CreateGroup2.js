@@ -43,7 +43,7 @@ const CreateGroup2 = (props) => {
     const renderHeader = () => (
         <NavBar
             title="Create Group"
-            titleStyle={{ fontSize: 15 }}
+            titleStyle={{ fontSize: 25 }}
             transparent={true}
             onLeftPress={() => props.navigation.openDrawer()}
             style={Platform.OS === 'android' ? { marginTop: theme.SIZES.BASE } : null}

@@ -29,8 +29,8 @@ const AddMembers = (props) => {
 
     const renderHeader = () => (
         <NavBar
-            title="Create Group"
-            titleStyle={{ fontSize: 15 }}
+            title="Add Members"
+            titleStyle={{ fontSize: 25 }}
             transparent={true}
             onLeftPress={() => props.navigation.openDrawer()}
             style={Platform.OS === 'android' ? { marginTop: theme.SIZES.BASE } : null}
@@ -87,11 +87,15 @@ const AddMembers = (props) => {
                 <Button
                     round
                     onPress={() => setMembers(mock)}
-                    style={{ alignSelf: 'stretch', marginLeft: 'auto', marginRight: 'auto', width: '10%' }}
-                >
-                    Invite Friends
-                </Button>
+                    // style={{ alignSelf: 'stretch', marginLeft: 'auto', marginRight: 'auto', width: '10%' }}
+                    onlyIcon
+                    icon='search1'
+                    family="antdesign"
+                    iconSize={14}
+                    iconColor="black"
+                />
             </Block>
+            <Text muted>Suggested: Dad, Mom</Text>
 
             {/* cards */}
             <ScrollView style={{ flex: 1 }}>{renderCards()}</ScrollView>
