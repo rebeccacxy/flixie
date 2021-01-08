@@ -13,8 +13,9 @@ import Dashboard1 from './src/screens/Dashboard1';
 import CreateGroup1 from './src/screens/CreateGroup1';
 import Preferences from './src/screens/Preferences';
 import CreateGroup2 from './src/screens/CreateGroup2';
-import Dashboard2 from './src/screens/Dashboard1';
-
+import Dashboard2 from './src/screens/Dashboard2';
+import AddMembers from './src/screens/AddMembers';
+import Info from './src/screens/Info';
 
 
 const Stack = createStackNavigator();
@@ -35,6 +36,7 @@ const App = () => {
           <Stack.Screen name="AddMembers" component={AddMembers} />
           <Stack.Screen name="CreateGroup2" component={CreateGroup2} />
           <Stack.Screen name="Dashboard2" component={Dashboard2} />
+          <Stack.Screen name="Info" component={Info} />
           {/* <Stack.Screen name="Root" component={Routes} /> */}
         </Stack.Navigator>
       </NavigationContainer>

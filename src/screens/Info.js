@@ -22,8 +22,12 @@ const Profile = () => {
         info4,
         location,
         match,
-        name
-    } = Demo[7];
+        name,
+        description,
+        genre,
+        rating,
+        date
+    } = Demo[10];
 
     return (
         <ImageBackground
@@ -52,13 +56,17 @@ const Profile = () => {
                     name={name}
                     age={age}
                     location={location}
-                    info1={info1}
-                    info2={info2}
-                    info3={info3}
-                    info4={info4}
+                    // info1={info1}
+                    // info2={info2}
+                    // info3={info3}
+                    // info4={info4}
+                    description={description}
+                    genre={genre}
+                    rating={rating}
+                    date={date}
                 />
 
-                <View style={styles.actionsProfile}>
+                {/* <View style={styles.actionsProfile}>
                     <TouchableOpacity style={styles.circledButton}>
                         <Text style={styles.iconButton}>
                             <Icon name="optionsH" />
@@ -71,7 +79,7 @@ const Profile = () => {
                         </Text>
                         <Text style={styles.textButton}>Start chatting</Text>
                     </TouchableOpacity>
-                </View>
+                </View> */}
             </ScrollView>
         </ImageBackground>
     );

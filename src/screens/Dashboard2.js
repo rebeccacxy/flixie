@@ -37,7 +37,7 @@ const cards = [
     iconFamily: 'Galio',
   },
   {
-    title: 'New Group',
+    title: 'Memes',
     subtitle: '2 Members',
     icon: 'credit-card',
     iconFamily: 'Galio',
@@ -168,7 +168,7 @@ const Dashboard = (props) => {
             {props.subtitle}
           </Text>
         </Block>
-        <Button style={styles.right}>
+        <Button style={styles.right} onPress={() => props.navigation.navigate('Info')}>
           <Icon
             style={styles.right}
             size={25}
