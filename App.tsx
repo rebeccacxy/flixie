@@ -10,7 +10,6 @@ import Login from './src/screens/Login'
 import Start from './src/screens/Start';
 import Register from './src/screens/Register';
 
-
 const Stack = createStackNavigator();
 
 const App = () => {
