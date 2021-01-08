@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import { StyleSheet, Text, TouchableOpacity } from 'react-native';
 import { colors, gStyle } from '../constants';
 
-const PlaylistItem = ({ bgColor, onPress, title }) => (
+const PlaylistItem = ({ bgColor, onPress, title, styleParent }) => (
   <TouchableOpacity
     activeOpacity={gStyle.activeOpacity}
     onPress={onPress}
-    style={[styles.playlistItem, { backgroundColor: bgColor }]}
+    style={[styles.playlistItem, { backgroundColor: bgColor }, styleParent]}
   >
     <Text style={styles.playlistTitle}>{title}</Text>
   </TouchableOpacity>

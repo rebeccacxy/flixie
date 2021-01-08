@@ -32,7 +32,8 @@ class Search extends React.Component {
     this.state = {
       scrollY: new Animated.Value(0),
       searchStart,
-      searchEnd: searchStart - 40
+      searchEnd: searchStart - 40,
+      isPressed: []
     };
   }
 
@@ -123,10 +124,19 @@ class Search extends React.Component {
               const item = browseAll[index];
 
               return (
-                <View key={item.id} style={styles.containerColumn}>
+                <View key={item.id} style={{ width: '50%' }}>
                   <PlaylistItem
+                    styleParent={this.state.isPressed.includes(item.id) ? { borderColor: 'black', borderWidth: '3%' } : {}}
+                    // styleParent={{ borderColor: 'black', borderWidth: '1%' }}
                     bgColor={item.color}
-                    onPress={() => null}
+                    onPress={() => this.setState((prevProps) => {
+                      var tmp = prevProps.isPressed
+                      tmp.push(item.id);
+                      return {
+                        ...prevProps,
+                        isPressed: tmp
+                      }
+                    })}
                     title={item.title}
                   />
                 </View>
