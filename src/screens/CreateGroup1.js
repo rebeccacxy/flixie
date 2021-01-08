@@ -89,12 +89,12 @@ const CreateGroup1 = (props) => {
 
             {/* stats */}
             {/* {renderStats()} */}
-            <Block middle row center style={{ padding: BASE_SIZE }} flex>
+            <Block middle style={{ padding: BASE_SIZE }}>
                 <Input placeholder="Group Name" />
                 <Button
-                    color="#e279fc"
                     round
                     onPress={() => props.navigation.navigate('Preferences')}
+                    style={{alignSelf:'stretch', marginLeft:'auto', marginRight:'auto', width:'100%'}}
                 >
                     Invite Friends
                 </Button>
@@ -102,8 +102,8 @@ const CreateGroup1 = (props) => {
 
             {/* cards */}
             <ScrollView style={{ flex: 1 }}>{renderCards()}</ScrollView>
-            <Block flex middle space='evenly' color="#e279fc">
-                <Button>Create</Button>
+            <Block middle space='evenly' style={{ padding: BASE_SIZE }}>
+                <Button color="#e279fc" style={{alignSelf:'stretch', marginLeft:'auto', marginRight:'auto', width:'100%'}}>Create</Button>
             </Block>
         </Block>
     );
