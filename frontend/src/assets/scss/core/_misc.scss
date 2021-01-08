@@ -1,3 +1,6 @@
+@import url(//db.onlinewebfonts.com/c/dffb2b80813d195d26fa4d2aad48b059?family=Gotham+Rounded);
+@font-face {font-family: "Gotham Rounded"; src: url("//db.onlinewebfonts.com/t/dffb2b80813d195d26fa4d2aad48b059.eot"); src: url("//db.onlinewebfonts.com/t/dffb2b80813d195d26fa4d2aad48b059.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/dffb2b80813d195d26fa4d2aad48b059.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/dffb2b80813d195d26fa4d2aad48b059.woff") format("woff"), url("//db.onlinewebfonts.com/t/dffb2b80813d195d26fa4d2aad48b059.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/dffb2b80813d195d26fa4d2aad48b059.svg#Gotham Rounded") format("svg"); } 
+
 html * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -12,7 +15,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: "Gotham Rounded", "Roboto", "Helvetica", "Arial", sans-serif;
   font-weight: 300;
   line-height: 1.5em;
 }

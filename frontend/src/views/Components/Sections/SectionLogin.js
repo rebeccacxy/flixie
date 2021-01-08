@@ -65,10 +65,10 @@ export default function SectionLogin() {
                     </Button>
                   </div>
                 </CardHeader>
-                <p className={classes.divider}>Or Be Classical</p>
+                {/* <p className={classes.divider}>Or Be Classical</p> */}
                 <CardBody>
                   <CustomInput
-                    labelText="First Name..."
+                    labelText="First Name"
                     id="first"
                     formControlProps={{
                       fullWidth: true
@@ -83,7 +83,7 @@ export default function SectionLogin() {
                     }}
                   />
                   <CustomInput
-                    labelText="Email..."
+                    labelText="Email"
                     id="email"
                     formControlProps={{
                       fullWidth: true

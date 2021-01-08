@@ -23,6 +23,8 @@ import styles from "assets/jss/material-kit-react/views/loginPage.js";
 
 import image from "assets/img/bg7.jpg";
 
+import "index.scss";
+
 const useStyles = makeStyles(styles);
 
 export default function LoginPage(props) {
@@ -37,8 +39,8 @@ export default function LoginPage(props) {
       <Header
         absolute
         color="transparent"
-        brand="Material Kit React"
-        rightLinks={<HeaderLinks />}
+        brand="Matchy Matchy"
+        // rightLinks={<HeaderLinks />}
         {...rest}
       />
       <div
@@ -86,10 +88,10 @@ export default function LoginPage(props) {
                       </Button>
                     </div>
                   </CardHeader>
-                  <p className={classes.divider}>Or Be Classical</p>
+                  {/* <p className={classes.divider}>Or Be Classical</p> */}
                   <CardBody>
                     <CustomInput
-                      labelText="First Name..."
+                      labelText="First Name"
                       id="first"
                       formControlProps={{
                         fullWidth: true
@@ -104,7 +106,7 @@ export default function LoginPage(props) {
                       }}
                     />
                     <CustomInput
-                      labelText="Email..."
+                      labelText="Email"
                       id="email"
                       formControlProps={{
                         fullWidth: true
@@ -138,7 +140,7 @@ export default function LoginPage(props) {
                     />
                   </CardBody>
                   <CardFooter className={classes.cardFooter}>
-                    <Button simple color="primary" size="lg">
+                    <Button className="default-font" simple color="primary" size="lg">
                       Get started
                     </Button>
                   </CardFooter>

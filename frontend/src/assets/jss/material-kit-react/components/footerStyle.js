@@ -21,6 +21,11 @@ const footerStyle = {
     margin: "0",
     float: "right!important"
   },
+  center: {
+    padding: "15px 0",
+    margin: "0",
+    float: "center!important"
+  },
   footer: {
     padding: "0.9375rem 0",
     textAlign: "center",
