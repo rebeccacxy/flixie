@@ -1,5 +1,12 @@
 import React from 'react';
-import { Image, Animated, Easing } from 'react-native';
+import {
+  Text,
+  Button,
+  TouchableOpacity,
+  Image,
+  Animated,
+  Easing,
+} from 'react-native';
 
 import { FontAwesome, AntDesign } from '@expo/vector-icons';
 import { Video } from 'expo-av';
@@ -7,6 +14,10 @@ import { LinearGradient } from 'expo-linear-gradient';
 import Lottie from 'lottie-react-native';
 
 import musicFly from '../../../assets/lottie-animations/music-fly.json';
+
+// import '../Expandedscreen.js';
+
+// import CollapseView from '../Collapseview.js';
 
 import {
   Container,
@@ -36,21 +47,25 @@ interface Props {
 }
 
 const Feed: React.FC<Props> = ({ play, item }) => {
-  const spinValue = new Animated.Value(0);
+  // const spinValue = new Animated.Value(0);
 
-  Animated.loop(
-    Animated.timing(spinValue, {
-      toValue: 1,
-      duration: 10000,
-      easing: Easing.linear,
-      useNativeDriver: true,
-    }),
-  ).start();
+  // Animated.loop(
+  //   Animated.timing(spinValue, {
+  //     toValue: 1,
+  //     duration: 10000,
+  //     easing: Easing.linear,
+  //     useNativeDriver: true,
+  //   }),
+  // ).start();
 
-  const rotateProp = spinValue.interpolate({
-    inputRange: [0, 1],
-    outputRange: ['0deg', '360deg'],
-  });
+  // const rotateProp = spinValue.interpolate({
+  //   inputRange: [0, 1],
+  //   outputRange: ['0deg', '360deg'],
+  // });
+
+  // const onPress = (e) => {
+  //       this.setState(iconColor: "blue")
+  //   };
 
   return (
     <>
@@ -82,13 +97,17 @@ const Feed: React.FC<Props> = ({ play, item }) => {
       <Details>
         <User>{item.username}</User>
         <Tags>{item.tags}</Tags>
-        {/* <MusicBox>
-          <FontAwesome name="music" size={15} color="#f5f5f5" />
-          <Music>{item.music}</Music>
-        </MusicBox> */}
+        <MusicBox>
+          <TouchableOpacity
+          // onPress={navigation.navigate('Expandedscreen')}
+          >
+            <Music>{item.music}</Music>
+          </TouchableOpacity>
+        </MusicBox>
 
         <BoxAction>
           <AntDesign
+            // onPress={()=> this.setState(colorCode: 'green')}
             style={{ alignSelf: 'center', paddingHorizontal: 110 }}
             name="heart"
             size={50}
@@ -100,6 +119,7 @@ const Feed: React.FC<Props> = ({ play, item }) => {
             size={60}
             color="#fff"
           />
+
           <TextAction>{item.likes}</TextAction>
         </BoxAction>
       </Details>
@@ -129,11 +149,11 @@ const Feed: React.FC<Props> = ({ play, item }) => {
             />
           </Animated.View> */}
 
-          <Lottie
+          {/* <Lottie
             source={musicFly}
             progress={play ? spinValue : 0}
             style={{ width: 150, position: 'absolute', bottom: 0, right: 0 }}
-          />
+          /> */}
         </BoxAction>
       </Actions>
       <LinearGradient

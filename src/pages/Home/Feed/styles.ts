@@ -2,7 +2,7 @@ import styled from 'styled-components/native';
 
 export const Container = styled.View`
   background: #fff;
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -36,8 +36,7 @@ export const MusicBox = styled.View`
   align-items: center;
 `;
 export const Music = styled.Text`
-  font-size: 15px;
-  padding: 5px 5px 5px 15px;
+  font-size: 18px;
   flex-shrink: 1;
   color: #fff;
 `;

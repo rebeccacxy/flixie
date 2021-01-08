@@ -15,7 +15,7 @@ import Discover from '../pages/Discover';
 import Home from '../pages/Home';
 import Inbox from '../pages/Inbox';
 import Me from '../pages/Me';
-import Record from '../pages/Record';
+// import Record from '../pages/Record';
 
 const Tab = createMaterialBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -54,7 +54,7 @@ const AppRoutes: React.FC = () => {
           blur: () => setHome(false),
         }}
         options={{
-          tabBarLabel: 'Home',
+          tabBarLabel: 'Discover',
           tabBarIcon: ({ color }) => (
             <FontAwesome name="home" size={24} color={color} />
           ),
@@ -123,11 +123,11 @@ const RootStackScreen: React.FC = () => {
         component={AppRoutes}
         options={{ headerShown: false }}
       />
-      <Stack.Screen
+      {/* <Stack.Screen
         options={{ headerShown: false }}
         name="Record"
         component={Record}
-      />
+      /> */}
     </Stack.Navigator>
   );
 };
