@@ -35,26 +35,26 @@ const ProfileItem = ({
 
       <View style={styles.info}>
         <Text style={styles.iconProfile}>
-          <Icon family="AntDesign" name="filter" />
+          <Icon size={30} family="AntDesign" name="filter" />
         </Text>
-        <Text style={styles.infoContent}>{genre}</Text>
+        <Text style={styles.infoStats}>{genre}</Text>
       </View>
 
       <View style={styles.info}>
         <Text style={styles.iconProfile}>
-          <Icon family="font-awesome" name="bar-chart" />
+          <Icon size={30} family="font-awesome" name="bar-chart" />
         </Text>
-        <Text style={styles.infoContent}>{rating}</Text>
+        <Text style={styles.infoStats}>{rating}</Text>
       </View>
 
       <View style={styles.info}>
         <Text style={styles.iconProfile}>
-          <Icon family="AntDesign" name="calendar" />
+          <Icon size={30} family="AntDesign" name="calendar" />
         </Text>
-        <Text style={styles.infoContent}>{date}</Text>
+        <Text style={styles.infoStats}>{date}</Text>
       </View>
 
-      <View style={styles.info}>
+      <View style={styles.infoDesc}>
         {/* <Text style={styles.iconProfile}>
           <Icon name="user" />
         </Text> */}

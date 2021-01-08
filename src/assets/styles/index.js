@@ -209,7 +209,8 @@ export default StyleSheet.create({
 		color: DARK_GRAY,
 		fontSize: 35,
 		textAlign: "center",
-		marginBottom: '5%'
+		marginBottom: '5%',
+		fontWeight: 'bold'
 	},
 	descriptionProfileItem: {
 		color: GRAY,
@@ -217,18 +218,27 @@ export default StyleSheet.create({
 		paddingBottom: 20,
 		fontSize: 13
 	},
+	infoDesc: {
+		paddingVertical: 8,
+		flexDirection: "row",
+		alignItems: "center",
+		marginTop: '5%'
+	},
 	info: {
 		paddingVertical: 8,
 		flexDirection: "row",
 		alignItems: "center"
+	},
+	infoStats: {
+		fontSize: 20,
 	},
 	iconProfile: {
 		fontFamily: ICON_FONT,
 		fontSize: 12,
 		color: DARK_GRAY,
 		paddingHorizontal: 10,
-		paddingLeft: '5%',
-		paddingRight: '5%'
+		paddingLeft: '8%',
+		// paddingRight: '5%'
 	},
 	infoContent: {
 		color: GRAY,
@@ -236,7 +246,8 @@ export default StyleSheet.create({
 		paddingLeft: '10%',
 		paddingRight: '10%',
 		// justifyContent: 'space-evenly',
-		textAlign: 'justify'
+		textAlign: 'justify',
+		// marginTop: '3%'
 	},
 
 	// CONTAINER - GENERAL

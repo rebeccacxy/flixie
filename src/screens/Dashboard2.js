@@ -57,7 +57,7 @@ const Dashboard = (props) => {
         <Button
           color="transparent"
           style={styles.settings}
-          onPress={() => props.navigation.navigate('CreateGroup1')}
+          onPress={() => props.navigation.navigate('Info')}
         >
           <Icon
             size={30}
