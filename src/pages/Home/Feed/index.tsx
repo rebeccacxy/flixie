@@ -68,7 +68,7 @@ const Feed= ({ play, item, navigation }) => {
   //   };
 
   const vids = [
-    require("../../../assets/forbiggerblazes.mp4"),
+    require("../../../assets/got1.mp4"),
     require("../../../assets/big-buck-bunny1.mp4"),
     require("../../../assets/queensgambit1.mp4"),
     require("../../../assets/naruto1.mp4"),
