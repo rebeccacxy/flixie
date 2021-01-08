@@ -47,7 +47,7 @@ const AppRoutes: React.FC = () => {
       activeColor={home ? '#fff' : '#000'}
     >
       <Tab.Screen
-        name="Home"
+        name="Discover"
         component={Home}
         listeners={{
           focus: () => setHome(true),
@@ -60,7 +60,7 @@ const AppRoutes: React.FC = () => {
           ),
         }}
       />
-      <Tab.Screen
+      {/* <Tab.Screen
         name="Discover"
         component={Discover}
         options={{
@@ -69,8 +69,8 @@ const AppRoutes: React.FC = () => {
             <AntDesign name="search1" size={24} color={color} />
           ),
         }}
-      />
-      <Tab.Screen
+      /> */}
+      {/* <Tab.Screen
         name="Live"
         component={Record}
         listeners={({ navigation }) => ({
@@ -86,12 +86,12 @@ const AppRoutes: React.FC = () => {
           tabBarLabel: '',
           tabBarIcon: () => <HomeButtom home={home} />,
         }}
-      />
+      /> */}
       <Tab.Screen
-        name="Inbox"
+        name="Chats"
         component={Inbox}
         options={{
-          tabBarLabel: 'Inbox',
+          tabBarLabel: 'Chats',
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons
               name="message-text-outline"

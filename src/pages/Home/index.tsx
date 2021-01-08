@@ -15,11 +15,11 @@ const Home: React.FC = () => {
     <Container>
       <Header>
         <Tab onPress={() => setTab(1)}>
-          <Text active={tab === 1}>Following</Text>
+          <Text active={tab === 1}>Recommendations</Text>
         </Tab>
         <Separator>|</Separator>
         <Tab onPress={() => setTab(2)}>
-          <Text active={tab === 2}>For You</Text>
+          <Text active={tab === 2}>Explore</Text>
         </Tab>
       </Header>
       <ViewPager

@@ -4,7 +4,7 @@
       "id": 0,
       "username": "The Queen's Gambit",
       "tags": "#action #feminism #chess #genius",
-      "music": "Introducing Chromecast. The easiest way to enjoy",
+      // "music": "Introducing Chromecast. The easiest way to enjoy",
       // "likes": 9444,
       // "comments": 6340,
       "uri": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
@@ -14,8 +14,8 @@
       "username": "@matheuscastroweb",
       "tags": "#reactnative #testvideo #tiktok #git #development #github #clone #react",
       "music": "HBO GO now works with Chromecast",
-      "likes": 8411,
-      "comments": 2240,
+      // "likes": 8411,
+      // "comments": 2240,
       "uri": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
     }
   ]
