@@ -135,7 +135,7 @@ class Search extends React.Component {
                       return {
                         ...prevProps,
                         isPressed: tmp
-                      }
+                      };
                     })}
                     title={item.title}
                   />
