@@ -26,6 +26,7 @@ const mock = [
 
 const AddMembers = (props) => {
     const [members, setMembers] = React.useState([]);
+    const [textValue, setTextValue] = React.useState('');
 
     const renderHeader = () => (
         <NavBar
@@ -75,28 +76,23 @@ const AddMembers = (props) => {
 
             {/* stats */}
             {/* {renderStats()} */}
-            <Block middle style={{ padding: BASE_SIZE }} flex>
+            <Block middle style={{ padding: BASE_SIZE }} >
                 <Input
                     placeholder="Add friends"
-                // right
-                // icon="search1"
-                // family="antdesign"
-                // iconSize={14}
-                // iconColor="black"
-                />
-                <Button
-                    round
-                    onPress={() => setMembers(mock)}
-                    // style={{ alignSelf: 'stretch', marginLeft: 'auto', marginRight: 'auto', width: '10%' }}
-                    onlyIcon
-                    icon='search1'
+                    style={{width:'90%'}}
+                    right
+                    icon="search1"
                     family="antdesign"
-                    iconSize={14}
+                    iconSize={18}
                     iconColor="black"
+                    value={textValue}
+                    onChange={(e) => setTextValue(e)}
+                    onSubmitEditing={() => {
+                        setTextValue('');
+                        setMembers(mock);
+                    }}
                 />
             </Block>
-            <Text muted>Suggested: Dad, Mom</Text>
-
             {/* cards */}
             <ScrollView style={{ flex: 1 }}>{renderCards()}</ScrollView>
             {/* <Block middle space='evenly' style={{ padding: BASE_SIZE }}>
