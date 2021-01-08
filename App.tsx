@@ -9,6 +9,7 @@ import LinkingConfiguration from './src/navigation/LinkingConfiguration';
 import Login from './src/screens/Login'
 import Start from './src/screens/Start';
 import Register from './src/screens/Register';
+import Dashboard1 from './src/screens/Dashboard1';
 
 const Stack = createStackNavigator();
 
@@ -22,7 +23,13 @@ const App = () => {
           <Stack.Screen name="Home" component={Start} />
           <Stack.Screen name="Login" component={Login} />
           <Stack.Screen name="Register" component={Register} />
-          <Stack.Screen name="Root" component={Routes} />
+          <Stack.Screen name="Dashboard1" component={Dashboard1} />
+          {/* <Stack.Screen name="CreateGroup1" component={CreateGroup1} />
+          <Stack.Screen name="AddMembers" component={AddMembers} />
+          <Stack.Screen name="CreateGroup2" component={CreateGroup2} />
+          <Stack.Screen name="Dashboard2" component={Dashboard2} />
+          <Stack.Screen name="Preferences" component={Preferences} />
+          <Stack.Screen name="Root" component={Routes} /> */}
         </Stack.Navigator>
       </NavigationContainer>
     </>

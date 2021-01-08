@@ -39,10 +39,11 @@ const LoginScreen = ({ navigation, setAccountDetails }) => {
     //     setEmail({ ...email, error: 'Incorrect email' });
     //     setPassword({ ...password, error: 'Error' });
     //   })
-    navigation.reset({
-      index: 0,
-      routes: [{ name: 'Root' }],
-    })
+    navigation.navigate('Dashboard1');
+    // navigation.reset({
+    //   index: 0,
+    //   routes: [{ name: 'Root' }],
+    // })
   };
 
   return (
