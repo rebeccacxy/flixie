@@ -11,6 +11,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import HomeButtom from '../components/HomeButton';
 import Discover from '../pages/Discover';
+// import Home from '../screens/Home.js';
 import Home from '../pages/Home';
 import Inbox from '../pages/Inbox';
 import Me from '../pages/Me';
