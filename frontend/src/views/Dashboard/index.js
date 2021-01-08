@@ -26,7 +26,7 @@ const dashboardRoutes = [];
 
 const useStyles = makeStyles(styles);
 
-export default function LandingPage(props) {
+export default function Dashboard(props) {
   const classes = useStyles();
   const { ...rest } = props;
   return (
