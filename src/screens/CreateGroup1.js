@@ -69,10 +69,10 @@ const CreateGroup1 = (props) => {
                 </Block>
                 <Button style={styles.right}>
                     <Icon
-                        size={BASE_SIZE}
+                        size={25}
                         name="circle-with-cross"
                         family="Entypo"
-                        color={COLOR_GREY}
+                        color="#e279fc"
                     />
                 </Button>
             </Block>
@@ -89,11 +89,11 @@ const CreateGroup1 = (props) => {
 
             {/* stats */}
             {/* {renderStats()} */}
-            <Block>
+            <Block middle row center style={{ padding: BASE_SIZE }} flex>
                 <Input placeholder="Group Name" />
                 <Button
+                    color="#e279fc"
                     round
-                    uppercase
                     onPress={() => props.navigation.navigate('Preferences')}
                 >
                     Invite Friends
@@ -102,7 +102,7 @@ const CreateGroup1 = (props) => {
 
             {/* cards */}
             <ScrollView style={{ flex: 1 }}>{renderCards()}</ScrollView>
-            <Block middle space='evenly'>
+            <Block flex middle space='evenly' color="#e279fc">
                 <Button>Create</Button>
             </Block>
         </Block>
