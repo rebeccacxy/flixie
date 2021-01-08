@@ -27,6 +27,7 @@
     "react": "16.13.1",
     "react-dom": "16.9.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-39.0.3.tar.gz",
+    "react-native-bubble-select": "^0.6.0",
     "react-native-gesture-handler": "~1.7.0",
     "react-native-modal-dropdown": "git+https://github.com/siemiatj/react-native-modal-dropdown.git",
     "react-native-paper": "^3.9.0",

@@ -11,6 +11,7 @@ import Start from './src/screens/Start';
 import Register from './src/screens/Register';
 import Dashboard1 from './src/screens/Dashboard1';
 import CreateGroup1 from './src/screens/CreateGroup1';
+import Preferences from './src/screens/Preferences';
 
 const Stack = createStackNavigator();
 
@@ -25,11 +26,11 @@ const App = () => {
           <Stack.Screen name="Login" component={Login} />
           <Stack.Screen name="Register" component={Register} />
           <Stack.Screen name="Dashboard1" component={Dashboard1} />
+          <Stack.Screen name="Preferences" component={Preferences} />
           <Stack.Screen name="CreateGroup1" component={CreateGroup1} />
           {/* <Stack.Screen name="AddMembers" component={AddMembers} />
           <Stack.Screen name="CreateGroup2" component={CreateGroup2} />
           <Stack.Screen name="Dashboard2" component={Dashboard2} />
-          <Stack.Screen name="Preferences" component={Preferences} />
           <Stack.Screen name="Root" component={Routes} /> */}
         </Stack.Navigator>
       </NavigationContainer>

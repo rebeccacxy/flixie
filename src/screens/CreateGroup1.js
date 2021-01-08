@@ -89,9 +89,15 @@ const CreateGroup1 = (props) => {
 
             {/* stats */}
             {/* {renderStats()} */}
-            <Block middle>
+            <Block>
                 <Input placeholder="Group Name" />
-                <Button round uppercase>Invite Friends</Button>
+                <Button
+                    round
+                    uppercase
+                    onPress={() => props.navigation.navigate('Preferences')}
+                >
+                    Invite Friends
+                </Button>
             </Block>
 
             {/* cards */}
