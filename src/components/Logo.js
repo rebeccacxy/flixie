@@ -10,6 +10,8 @@ const styles = StyleSheet.create({
     width: 144,
     height: 135,
     marginBottom: 12,
+    alignSelf: 'center',
+    marginTop: '5%'
   },
 });
 

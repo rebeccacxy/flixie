@@ -1,0 +1,20 @@
+[
+  { "id": 1, "color": "#e69e41", "title": "Action" },
+  { "id": 2, "color": "#5b8d7c", "title": "Adventure" },
+  { "id": 3, "color": "#a3bdcb", "title": "Comedy" },
+  { "id": 4, "color": "#e1789d", "title": "Crime" },
+  { "id": 5, "color": "#6297eb", "title": "Drama" },
+  { "id": 6, "color": "#ac9ac1", "title": "Fantasy" },
+  { "id": 7, "color": "#ea6c45", "title": "Historical" },
+  { "id": 8, "color": "#6297eb", "title": "Horror" },
+  { "id": 9, "color": "#e3b966", "title": "Mystery" },
+  { "id": 10, "color": "#8ecfc1", "title": "Philosophical" },
+  { "id": 11, "color": "#5b8d7c", "title": "Political" },
+  { "id": 12, "color": "#ae9ac2", "title": "Romance" },
+  { "id": 13, "color": "#ea6c45", "title": "Satire" },
+  { "id": 14, "color": "#a3bdcb", "title": "Science Fiction" },
+  { "id": 15, "color": "#8ecfc1", "title": "Social" },
+  { "id": 16, "color": "#5b8d7c", "title": "Speculative" },
+  { "id": 17, "color": "#da47a0", "title": "Thriller" },
+  { "id": 18, "color": "#a3becb", "title": "Western" }
+]
