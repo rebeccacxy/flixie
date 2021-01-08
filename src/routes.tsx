@@ -6,9 +6,7 @@ import AppRoutes from './routes/app.routes';
 
 const Routes: React.FC = () => {
   return (
-    <NavigationContainer>
       <AppRoutes />
-    </NavigationContainer>
   );
 };
 

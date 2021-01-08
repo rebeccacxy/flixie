@@ -1,0 +1,1 @@
+export default 'http://107.21.33.245:3000' // change this according to your own 
