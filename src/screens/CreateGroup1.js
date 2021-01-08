@@ -71,7 +71,7 @@ const CreateGroup1 = (props) => {
                     <Icon
                         size={BASE_SIZE}
                         name="circle-with-cross"
-                        family="Galio"
+                        family="Entypo"
                         color={COLOR_GREY}
                     />
                 </Button>
@@ -89,14 +89,14 @@ const CreateGroup1 = (props) => {
 
             {/* stats */}
             {/* {renderStats()} */}
-            <Block>
+            <Block middle>
                 <Input placeholder="Group Name" />
                 <Button round uppercase>Invite Friends</Button>
             </Block>
 
             {/* cards */}
             <ScrollView style={{ flex: 1 }}>{renderCards()}</ScrollView>
-            <Block>
+            <Block middle space='evenly'>
                 <Button>Create</Button>
             </Block>
         </Block>
