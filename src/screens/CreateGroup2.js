@@ -55,6 +55,7 @@ const CreateGroup2 = (props) => {
             <Block
                 row
                 center
+                shadow
                 card
                 space="between"
                 style={styles.card}
@@ -101,6 +102,8 @@ const CreateGroup2 = (props) => {
                     round
                     onPress={() => props.navigation.navigate('Preferences')}
                     style={{ alignSelf: 'stretch', marginLeft: 'auto', marginRight: 'auto', width: '100%' }}
+                    color="#B23AFC"
+
                 >
                     Invite Friends
                 </Button>
@@ -110,8 +113,8 @@ const CreateGroup2 = (props) => {
             <ScrollView style={{ flex: 1 }}>{renderCards()}</ScrollView>
             <Block middle space='evenly' style={{ padding: BASE_SIZE }}>
                 <Button
-                    color="#e279fc"
-                    style={{ alignSelf: 'stretch', marginLeft: 'auto', marginRight: 'auto', width: '100%' }}
+                        color="#B23AFC"
+                        style={{ alignSelf: 'stretch', marginLeft: 'auto', marginRight: 'auto', width: '100%' }}
                     onPress={() => props.navigation.navigate('Dashboard2')}
                 >Create</Button>
             </Block>

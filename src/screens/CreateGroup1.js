@@ -56,6 +56,7 @@ const CreateGroup1 = (props) => {
                 row
                 center
                 card
+                shadow
                 space="between"
                 style={styles.card}
                 key={props.title}
@@ -78,7 +79,7 @@ const CreateGroup1 = (props) => {
                         size={25}
                         name="circle-with-cross"
                         family="Entypo"
-                        color="#e279fc"
+                        color="#B23AFC"
                     />
                 </Button>
             </Block>
@@ -101,6 +102,7 @@ const CreateGroup1 = (props) => {
                     round
                     onPress={() => props.navigation.navigate('AddMembers')}
                     style={{ alignSelf: 'stretch', marginLeft: 'auto', marginRight: 'auto', width: '100%' }}
+                    color='#B23AFC'
                 >
                     Invite Friends
                 </Button>
@@ -109,44 +111,81 @@ const CreateGroup1 = (props) => {
             {/* cards */}
             <ScrollView style={{ flex: 1 }}>{renderCards()}</ScrollView>
             <Block middle space='evenly' style={{ padding: BASE_SIZE }}>
-                <Button color="#e279fc" style={{ alignSelf: 'stretch', marginLeft: 'auto', marginRight: 'auto', width: '100%' }}>Create</Button>
+                <Button color="#B23AFC" style={{ alignSelf: 'stretch', marginLeft: 'auto', marginRight: 'auto', width: '100%' }}>Create</Button>
             </Block>
         </Block>
     );
 };
 
+
 const styles = StyleSheet.create({
     card: {
-        borderColor: 'transparent',
-        marginHorizontal: BASE_SIZE,
-        marginVertical: BASE_SIZE / 2,
-        padding: BASE_SIZE,
-        backgroundColor: COLOR_WHITE,
-        shadowOpacity: 0.4,
+      borderColor: 'transparent',
+      marginHorizontal: BASE_SIZE,
+      marginVertical: BASE_SIZE / 2,
+      padding: BASE_SIZE,
+      backgroundColor: COLOR_WHITE,
+      shadowOpacity: 0.4,
     },
     menu: {
-        width: BASE_SIZE * 2,
-        borderColor: 'transparent',
+      width: BASE_SIZE * 2,
+      borderColor: 'transparent',
     },
     settings: {
-        width: BASE_SIZE * 2,
-        borderColor: 'transparent',
+      width: BASE_SIZE * 2,
+      borderColor: 'transparent',
     },
     left: {
-        marginRight: BASE_SIZE,
+      marginRight: BASE_SIZE,
+      marginLeft: 10,
     },
     right: {
-        width: BASE_SIZE * 2,
-        backgroundColor: 'transparent',
-        elevation: 0,
+      marginLeft: 25,
+      width: BASE_SIZE * 2,
+      backgroundColor: 'transparent',
+      elevation: 0,
     },
     gradient: {
-        width: BASE_SIZE * 3.25,
-        height: BASE_SIZE * 3.25,
-        borderRadius: BASE_SIZE * 3.25,
-        alignItems: 'center',
-        justifyContent: 'center',
+      width: BASE_SIZE * 3.25,
+      height: BASE_SIZE * 3.25,
+      borderRadius: BASE_SIZE * 3.25,
+      alignItems: 'center',
+      justifyContent: 'center',
     },
-});
+  });
+  
+// const styles = StyleSheet.create({
+//     card: {
+//         borderColor: 'transparent',
+//         marginHorizontal: BASE_SIZE,
+//         marginVertical: BASE_SIZE / 2,
+//         padding: BASE_SIZE,
+//         backgroundColor: COLOR_WHITE,
+//         shadowOpacity: 0.4,
+//     },
+//     menu: {
+//         width: BASE_SIZE * 2,
+//         borderColor: 'transparent',
+//     },
+//     settings: {
+//         width: BASE_SIZE * 2,
+//         borderColor: 'transparent',
+//     },
+//     left: {
+//         marginRight: BASE_SIZE,
+//     },
+//     right: {
+//         width: BASE_SIZE * 2,
+//         backgroundColor: 'transparent',
+//         elevation: 0,
+//     },
+//     gradient: {
+//         width: BASE_SIZE * 3.25,
+//         height: BASE_SIZE * 3.25,
+//         borderRadius: BASE_SIZE * 3.25,
+//         alignItems: 'center',
+//         justifyContent: 'center',
+//     },
+// });
 
 export default CreateGroup1;
