@@ -63,7 +63,7 @@ const Dashboard = (props) => {
             size={30}
             name="plus"
             family="font-awesome"
-            color={theme.COLORS.MUTED}
+            color='#B23AFC'
           />
         </Button>
       }
