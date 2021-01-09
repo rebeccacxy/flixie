@@ -18,25 +18,15 @@ const COLOR_GREY = theme.COLORS.MUTED; // '#D8DDE1';
 // mock data
 const members = [
     {
-        title: 'John',
+        title: 'JohnDoe23',
         icon: 'list-bullet',
         iconFamily: 'Galio',
     },
     {
-        title: 'Jacob',
+        title: 'JaneDoe12',
         icon: 'bag-17',
         iconFamily: 'Galio',
-    },
-    {
-        title: 'Jingleheimer',
-        icon: 'credit-card',
-        iconFamily: 'Galio',
-    },
-    {
-        title: 'Schmidt',
-        icon: 'credit-card',
-        iconFamily: 'Galio',
-    },
+    }
 ];
 
 const CreateGroup2 = (props) => {
@@ -113,8 +103,8 @@ const CreateGroup2 = (props) => {
             <ScrollView style={{ flex: 1 }}>{renderCards()}</ScrollView>
             <Block middle space='evenly' style={{ padding: BASE_SIZE }}>
                 <Button
-                        color="#B23AFC"
-                        style={{ alignSelf: 'stretch', marginLeft: 'auto', marginRight: 'auto', width: '100%' }}
+                    color="#B23AFC"
+                    style={{ alignSelf: 'stretch', marginLeft: 'auto', marginRight: 'auto', width: '100%' }}
                     onPress={() => props.navigation.navigate('Dashboard2')}
                 >Create</Button>
             </Block>

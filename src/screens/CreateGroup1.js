@@ -18,20 +18,20 @@ const COLOR_GREY = theme.COLORS.MUTED; // '#D8DDE1';
 // mock data
 const members = [
     {
-        title: 'John',
+        title: 'JohnDoe23',
         icon: 'list-bullet',
         iconFamily: 'Galio',
     },
-    {
-        title: 'Jacob',
-        icon: 'bag-17',
-        iconFamily: 'Galio',
-    },
-    {
-        title: 'Jingleheimer',
-        icon: 'credit-card',
-        iconFamily: 'Galio',
-    },
+    // {
+    //     title: 'Jacob',
+    //     icon: 'bag-17',
+    //     iconFamily: 'Galio',
+    // },
+    // {
+    //     title: 'Jingleheimer',
+    //     icon: 'credit-card',
+    //     iconFamily: 'Galio',
+    // },
     // {
     //     title: 'Schmidt',
     //     icon: 'credit-card',
@@ -120,40 +120,40 @@ const CreateGroup1 = (props) => {
 
 const styles = StyleSheet.create({
     card: {
-      borderColor: 'transparent',
-      marginHorizontal: BASE_SIZE,
-      marginVertical: BASE_SIZE / 2,
-      padding: BASE_SIZE,
-      backgroundColor: COLOR_WHITE,
-      shadowOpacity: 0.4,
+        borderColor: 'transparent',
+        marginHorizontal: BASE_SIZE,
+        marginVertical: BASE_SIZE / 2,
+        padding: BASE_SIZE,
+        backgroundColor: COLOR_WHITE,
+        shadowOpacity: 0.4,
     },
     menu: {
-      width: BASE_SIZE * 2,
-      borderColor: 'transparent',
+        width: BASE_SIZE * 2,
+        borderColor: 'transparent',
     },
     settings: {
-      width: BASE_SIZE * 2,
-      borderColor: 'transparent',
+        width: BASE_SIZE * 2,
+        borderColor: 'transparent',
     },
     left: {
-      marginRight: BASE_SIZE,
-      marginLeft: 10,
+        marginRight: BASE_SIZE,
+        marginLeft: 10,
     },
     right: {
-      marginLeft: 25,
-      width: BASE_SIZE * 2,
-      backgroundColor: 'transparent',
-      elevation: 0,
+        marginLeft: 25,
+        width: BASE_SIZE * 2,
+        backgroundColor: 'transparent',
+        elevation: 0,
     },
     gradient: {
-      width: BASE_SIZE * 3.25,
-      height: BASE_SIZE * 3.25,
-      borderRadius: BASE_SIZE * 3.25,
-      alignItems: 'center',
-      justifyContent: 'center',
+        width: BASE_SIZE * 3.25,
+        height: BASE_SIZE * 3.25,
+        borderRadius: BASE_SIZE * 3.25,
+        alignItems: 'center',
+        justifyContent: 'center',
     },
-  });
-  
+});
+
 // const styles = StyleSheet.create({
 //     card: {
 //         borderColor: 'transparent',

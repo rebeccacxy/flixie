@@ -31,7 +31,7 @@ const cards = [
     iconFamily: 'Galio',
   },
   {
-    title: 'GF',
+    title: 'The Boys',
     subtitle: '2 Members',
     icon: 'credit-card',
     iconFamily: 'Galio',
