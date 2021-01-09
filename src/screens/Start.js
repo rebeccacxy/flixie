@@ -10,10 +10,10 @@ const StartScreen = ({ navigation }) => {
   return (
     <Background>
       <Logo />
-      <Header>Matchy</Header>
+      <Header>Flixie</Header>
 
       <Paragraph>
-        Match with friends, Martin Henz
+        Like it. Match it. Watch it.
       </Paragraph>
       <Button mode="contained" onPress={() => navigation.navigate('Login')}>
         Login

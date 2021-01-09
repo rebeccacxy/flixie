@@ -37,7 +37,7 @@ const cards = [
     iconFamily: 'Galio',
   },
   {
-    title: 'Memes',
+    title: 'Class',
     subtitle: '2 Members',
     icon: 'credit-card',
     iconFamily: 'Galio',

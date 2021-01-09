@@ -44,6 +44,7 @@ const AddMembers = (props) => {
                 row
                 center
                 card
+                shadow
                 space="between"
                 style={styles.card}
                 key={card.title}
@@ -78,8 +79,8 @@ const AddMembers = (props) => {
             {/* {renderStats()} */}
             <Block middle style={{ padding: BASE_SIZE }} >
                 <Input
-                    placeholder="Add friends"
-                    style={{width:'90%'}}
+                    placeholder="Username"
+                    style={{ width: '90%' }}
                     right
                     icon="search1"
                     family="antdesign"
