@@ -1,5 +1,5 @@
 <h1 align="center">
-<img alt="tiktokclone" title="tiktokclone" src="./src/assets/images/logo.png" width="200px" />
+<img alt="flixie" title="flixie" src="./src/assets/images/logo.png" width="200px" />
     <br>
     Flixie
 </h1>
@@ -10,8 +10,8 @@ Like it. Match it. Watch it.
 
 <p align="center">
 
-  <img alt="shields.io" src="https://img.shields.io/github/repo-size/matheuscastroweb/tiktok-clone" />
-   <img alt="shields.io" src="https://img.shields.io/github/license/matheuscastroweb/tiktok-clone" />
+  <img alt="shields.io" src="https://img.shields.io/github/repo-size/rebeccacxy/flixie" />
+   <img alt="shields.io" src="https://img.shields.io/github/license/rebeccacxy/flixie" />
 
 </p>
 
