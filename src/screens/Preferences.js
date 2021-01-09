@@ -40,7 +40,7 @@ class Search extends React.Component {
   renderHeader = () => (
     <NavBar
       title="Genres"
-      titleStyle={{ fontSize: 40, marginTop: 30 }}
+      titleStyle={{ fontSize: 40, marginTop: 20 }}
       transparent={true}
       onLeftPress={() => props.navigation.openDrawer()}
       leftIconColor={theme.COLORS.MUTED}

@@ -87,7 +87,7 @@ const CreateGroup2 = (props) => {
             {/* stats */}
             {/* {renderStats()} */}
             <Block middle style={{ padding: BASE_SIZE }}>
-                <Input placeholder="Group Name" value='Memes' />
+                <Input placeholder="Group Name" value='Classmates' />
                 <Button
                     round
                     onPress={() => props.navigation.navigate('Preferences')}
