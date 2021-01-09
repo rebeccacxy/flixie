@@ -18,7 +18,7 @@ const COLOR_GREY = theme.COLORS.MUTED; // '#D8DDE1';
 // mock data
 const mock = [
     {
-        title: 'Schmidt',
+        title: 'JaneDoe12',
         icon: 'credit-card',
         iconFamily: 'Galio',
     },
