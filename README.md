@@ -15,6 +15,10 @@ Like it. Match it. Watch it.
 
 </p>
 
+<p align="center">
+ <img alt="landing" title="landing" src="./src/assets/images/readmepic.jpg" /><br>
+</p>
+
 ## Technologies
 
 This project was developed with the following technologies:
